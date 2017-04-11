@@ -1,0 +1,114 @@
+/* Medium Devices, Desktops */
+
+@media only screen and (max-width: 1000px) {
+    .container {
+        padding: 0 15px;
+    }
+    #hero {
+        height: 500px;
+        background-size: cover;
+    }
+    #posts {
+        width: 70%;
+    }
+    #sidebar {
+        width: 25%
+    }
+    .post img {
+        width: 100%;
+    }
+}
+/* Small Devices, Tablets */
+
+@media only screen and (max-width: 767px) {
+    header nav.desktop-menu ul li {
+        margin: 0 0 0 15px;
+        font-size: 18px;
+    }
+    #posts,
+    #sidebar {
+        width: 100%;
+    }
+    #hero {
+        height: 400px;
+    }
+    #hero h2,
+    .post h2 {
+        font-size: 30px
+    }
+    blockquote {
+        font-size: 26px
+    }
+    #hero h2 {
+        margin: 80px 0 40px;
+    }
+}
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 480px) {
+    header {
+        padding: 5px
+    }
+    .logo {
+        font-size: 28px
+    }
+    .menu-icon {
+        float: left;
+        width: 32px;
+        cursor: pointer;
+        position: relative;
+        top: 3px;
+        left: -9px;
+    }
+    header img.menu-icon {
+        display: inline-block;
+    }
+    header nav.desktop-menu {
+        display: none
+    }
+    header nav.mobile-menu {
+        display: block;
+        position: absolute;
+        background: #033048;
+        height: 260px;
+        top: 49px;
+        left: -50px;
+        transition: all .6s;
+        padding: 0 10px;
+        z-index: 99999;
+        visibility: hidden;
+        opacity: 0;
+    }
+    nav.mobile-menu.on {
+        left: 0px;
+        visibility: visible;
+        opacity: 1;
+    }
+    nav.mobile-menu ul li {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    nav.mobile-menu ul li a {
+        color: #f9e42e;
+    }
+    #hero {
+        height: 260px
+    }
+    #benefits p,
+    #benefits ul {
+        font-size: 20px;
+    }
+    #hero h2 {
+        margin: 40px 0 20px;
+        font-size: 20px;
+        padding: 0 20%
+    }
+    .button {
+        padding: 6px 0;
+        max-width: 160px;
+        font-size: 18px;
+    }
+    blockquote {
+        font-size: 18px
+    }
+}
